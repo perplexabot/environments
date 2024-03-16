@@ -1,2 +1,13 @@
 <h1>Welcome to {{title}}!</h1>
+<form [formGroup]="input0form">
+    <div>
+        <div *ngIf="searched">
+            <h1> search failed to find: {{query}}</h1>
+        </div>
+    </div>
+    <label for='input0'>input_0: </label>
+    <input type='text' id='input0' formControlName="input0">
+</form>
+<span>   </span>
+<button (click)=clicked()>search</button>
 <router-outlet />
