@@ -17,6 +17,7 @@ export class AppComponent {
   f = new FormControl('');
 
   dothing() {
+      console.log(`wtf ${this.f.value}`);
       this.attempt = this.f.value
   }
 }
