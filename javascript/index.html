@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+
+    <body>
+        <h1 class="woop"> hello </h1>
+        <script class="wow"></script>
+    </body>
+
+    <script>
+        function test() {
+            alert(666777);
+        }
+
+        //var xhr = new XMLHttpRequest();
+        //xhr.onreadystatechange = function() {
+        //if (this.readyState == 4 && this.status == 200) {
+        //        eval('var searchResultsObj = ' + this.responseText);
+        //        console.log('in here wtf');
+        //    }
+        //};
+        //xhr.open("GET", path + window.location.search);
+        //xhr.send();
+
+        // this tries to use innerText (for a h1 tag) as a sink
+        var og = document.getElementsByClassName("woop")[0];
+        var shiny = document.createElement('h1');
+        shiny.innerText = 'ok </h1><h3>what</h3><h1>';
+        og.appendChild(shiny);
+
+        // this tries to use innerText (for a script tag) as a sink
+        var og = document.getElementsByClassName("wow")[0];
+        og.innerText = 'alert(1)';
+    </script>
+</html>
