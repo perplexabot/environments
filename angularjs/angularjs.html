@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+    <body ng-app="myApp" ng-controller="myCtrl">
+        {{ firstName }}
+    </body>
+
+    <!-- a script tag can either have a src or inline content, not both, hence why we have two script blocks -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"> </script>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+            $scope.firstName = "hello";
+        });
+    </script>
+
+</html>
