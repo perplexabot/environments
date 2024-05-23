@@ -1,32 +1,13 @@
-<div>
-	<h1> woahhh </h1>
-	<br>
-	<br>
-	<br>
+<div id=main>
+    <div id=title>
+        <h1 id=title_text>dc</h1>
+    </div>
 
-	<span> things go here, right? yes, yes they do</span>
-
-	<br>
-	<br>
-
-    <span> things go here, right? {{oh_no}}</span>
-
-	<br>
-	<br>
-
-    <form>
-        <label for="inp0">enter thing: </label>
-        <input type="text" name="inp0" [formControl]="f">
-    </form>
-
-	<br>
-	<br>
-
-    <button (click)="dothing()">do thing</button>
-
-	<br>
-	<br>
-
-    <span> search q: {{ attempt }} </span>
+    <div id=ip_input>
+        <form id=ip_form action="javascript:alert(666)">
+            <input type="text" id=ip_text placeholder="w.x.y.z/??" autofocus>
+        </form>
+    </div>
+    <div id=ip_list></div>
 </div>
 <router-outlet />
