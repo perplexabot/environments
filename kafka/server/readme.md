@@ -1,3 +1,9 @@
+### running
+- start zookeeper and kafka
+```
+docker compose up --build --force-recreate
+```
+
 ### commands
 
 - create topic
