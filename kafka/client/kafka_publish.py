@@ -1,11 +1,9 @@
-"""
-Publish event to kafka. Test script.
-"""
+"""Publish event to kafka. Test script."""
 
 from confluent_kafka import Producer
 
 topic = "quickstart-events"
-server = '127.0.0.1:9092'
+server = 'localhost:9094'
 
 p = Producer({'bootstrap.servers': server})
 
