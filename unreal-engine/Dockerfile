@@ -16,7 +16,9 @@ RUN cd ${unreal_deploy_path} && \
     unzip *.zip -d ${unreal_deploy_path} && \
     rm -rf ${unreal_deploy_path}/*.zip
 
-RUN apt update && apt install -y libgles2-mesa-dev
+RUN apt update && apt install -y libgles2-mesa-dev xdg-user-dirs 
+
+RUN ln -s ${unreal_deploy_path}/Engine/Binaries/Linux/UnrealEditor /usr/local/bin/UnrealEditor 
 
 WORKDIR /unreal-project/
 
