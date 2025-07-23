@@ -7,5 +7,5 @@ docker run \
     -it \
     -v $PWD/HelloWorldMaven:/HelloWorldMaven \
     -w /HelloWorldMaven \
-    -u root "${IMAGE_NAME}" 
+    -u root "${IMAGE_NAME}" \
     /bin/bash
