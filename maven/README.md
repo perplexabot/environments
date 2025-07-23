@@ -24,5 +24,12 @@ $ mvn install
 
 ### run the dang thing
 ```
-java --class-path target/jb-hello-world-maven-0.1.0.jar hello.HelloWorld
+$ java --class-path target/jb-hello-world-maven-0.1.0.jar hello.HelloWorld
+```
+
+### modify your maven env
+```
+# make changes to Dockerfile, then build like so
+$ docker build . -t <custom_name>
+# this image name can then be passed to `get-env.sh`
 ```
