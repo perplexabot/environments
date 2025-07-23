@@ -33,3 +33,11 @@ $ java --class-path target/jb-hello-world-maven-0.1.0.jar hello.HelloWorld
 $ docker build . -t <custom_name>
 # this image name can then be passed to `get-env.sh`
 ```
+
+### have maven create a project dir for you
+```
+# need to look at the -D args, not sure what they mean... : p
+$ mvn archetype:generate "-DarchetypeGroupId=com.sap.cloud.sdk.archetypes" \
+    "-DarchetypeArtifactId=spring-boot3" \
+    "-DarchetypeVersion=RELEASE"
+```
