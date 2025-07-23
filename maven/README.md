@@ -1,6 +1,6 @@
 ### drop in env
 ```
-$ docker run --rm -it -v $PWD/HelloWorldMaven:/workspace -w /workspace -u root maven /bin/bash
+$ ./get-env.sh [optional docker image name - defaults to maven]
 ```
 NOTE: this uses default official maven image from dockerhub, so no users exist, saving and changes to underlying project will from root user, manual chown will need to be applied from outside the env if needed.
 
