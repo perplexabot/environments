@@ -12,11 +12,11 @@
     <script>
         var app = angular.module('myApp', []);
         app.controller('myCtrl', function($scope, $parse) {
-            $scope.a = 1;
-            $scope.b = 2;
-            var fn = $parse('a + b');
-            $scope.firstName = fn($scope);
+            var key = 'search';
+            $scope.query = {};
+            $scope.query[key] = alert(1);
+            var fn = $parse(key);
+            $scope.firstName = fn($scope.query);
         });
     </script>
-
 </html>
