@@ -3,8 +3,8 @@
     <head>
     </head>
 
-    <body ng-app="myApp" ng-controller="myCtrl">
-        {{ firstName }}
+    <body> 
+        <h1 ng-app="myApp" ng-controller="myCtrl"> we getting: {{'a'.constructor.constructor('alert(1)')()}} </h1>
     </body>
 
     <!-- a script tag can either have a src or inline content, not both, hence why we have two script blocks -->
@@ -14,9 +14,9 @@
         app.controller('myCtrl', function($scope, $parse) {
             var key = 'search';
             $scope.query = {};
-            $scope.query[key] = alert(1);
+            $scope.query[key] = ["testing", "was", "z", "a"];
             var fn = $parse(key);
-            $scope.firstName = fn($scope.query);
+            $scope.ARR = fn($scope.query);
         });
     </script>
 </html>
