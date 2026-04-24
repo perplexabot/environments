@@ -6,7 +6,12 @@
     <body> 
         <!-- <h1 ng-app="myApp" ng-controller="myCtrl"> we getting: {{ 'a'.constructor.prototype.charAt=[].join; 'abc'.charAt(1); $eval('1 + 1')}} </h1> -->
         <!-- <h1 ng-app="myApp" ng-controller="myCtrl"> we getting: {{ 'a'.constructor.prototype.charAt=[].join}} {{ $eval('x=alert(1)') }} </h1> -->
-        <h1 ng-app="myApp" ng-controller="myCtrl"> we getting: {{ 'a'.constructor.prototype.charAt=[].join; 'abc'.charAt(0); x='abc'; $eval(y=x+'def'); y+'hij'}} </h1>
+        <h1 ng-app="myApp" ng-controller="myCtrl"> we getting: 
+            {{ 
+                'a'.constructor.prototype.charAt=[].join; 
+                $eval('x=1} } };alert(1)//');
+            }} 
+        </h1>
     </body>
 
     <!-- a script tag can either have a src or inline content, not both, hence why we have two script blocks -->
