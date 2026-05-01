@@ -18,13 +18,6 @@
     <script type='text/javascript' src="./angular-1.4.4/angular.js"> </script>
     <script>
         var app = angular.module('myApp', []);
-        app.controller('myCtrl', function($scope, $parse) {
-            var key = 'search';
-            $scope.query = {};
-            $scope.query[key] = '666777';
-            //$scope.query[key] = ['a', 4,1, 3, 'alert'];
-            var fn = $parse(key);
-            $scope.value = fn($scope.query);
-        });
+        app.controller('myCtrl', function($scope, $parse) { });
     </script>
 </html>
